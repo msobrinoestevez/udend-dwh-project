@@ -37,8 +37,15 @@ The fact table is used to store all user song activities that contain the catego
 
 In order to fill the relational database, an ETL pipeline is used, which makes it possible to extract the necessary information from the log files of the user behaviour as well as the corresponding master data of the songs and convert it into the schema. For the distribution of facts and dimensions the automated distribution of Redshift was used, so that a manual definition of which tables are distributed and which are redundant on the individual cluster nodes is not necessary.
 
-* **Fact Table**: songplays
-* **Dimension Tables**: users, songs, artists and time.
+| Table | Description |
+| ---- | ---- |
+| staging_events | stating table for event data |
+| staging_songs | staging table for song data |
+| songplays | information how songs were played, e.g. when by which user in which session | 
+| users | user-related information such as name, gender and level | 
+| songs | song-related information containing name, artist, year and duration | 
+| artists | artist name and location (geo-coords and textual location) | 
+| time | time-related info for timestamps | 
 
 # Dataset used
 
