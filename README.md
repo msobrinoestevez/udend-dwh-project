@@ -6,9 +6,9 @@ In order to enable Sparkify to analyze their data, a Relational Database Schema 
 
 # How to run the python scripts
 
-To create the database tables and run the ETL pipeline, you must run the following two files in the order that they are listed below
-
 Setup a redshift cluster on AWS and insert the connection details in `dwh.cfg`
+
+To create the database tables and run the ETL pipeline, you must run the following two files in the order that they are listed below
 
 To create tables:
 ```bash
